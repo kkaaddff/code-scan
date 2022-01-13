@@ -12,6 +12,6 @@ use napi_derive::napi;
 static ALLOC: mimalloc::MiMalloc = mimalloc::MiMalloc;
 
 #[napi]
-pub fn plus_100(input: u32) -> u32 {
-  input + 100
+pub fn plus_100(root_path: String) -> String {
+  root_path + "123" 
 }
